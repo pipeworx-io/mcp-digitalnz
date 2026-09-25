@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-digitalnz",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DigitalNZ MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-c8bfd5d5ed341669cafc2cf5151ecf0ba67f9b6a31ee0206284a5f54e5ea1d38",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-c5cd78add0d3bfe43a258fb84939fc1f53ea50a4504fedf7f49c96ce6821b055",
+    "sourceCommit": "4fa4c64448be06f4a2ee4cee19f756f3558a7cad"
   }
 }
