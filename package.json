@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-digitalnz",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "DigitalNZ MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-digitalnz": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "digitalnz"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-digitalnz.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/digitalnz",
   "pipeworx": {
-    "sourceHash": "v1-9fe51161b2b63c4bb86f2a5f14b723f03c0130564481a0c7eaf142d00c9b90bd",
-    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
+    "mode": "gateway",
+    "slug": "digitalnz",
+    "gatewaySlug": "digitalnz",
+    "sourceHash": "v1-8ef11255ed6c9e73610faffb7680223c9e903e660b26b0accc36ece244a6d8ac",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }

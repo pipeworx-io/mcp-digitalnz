@@ -1,0 +1,50 @@
+[
+  {
+    "name": "search",
+    "description": "Search the DigitalNZ collection by keyword. Returns matching items with ids (pass an id to record), titles, creators/sources, dates and links.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Keyword(s)."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results (1-100, default 20)."
+        },
+        "page": {
+          "type": "number",
+          "description": "Page (1-based, default 1)."
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "DigitalNZ API key (optional) (auto-injected by the platform)."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "record",
+    "description": "Fetch full details for one DigitalNZ item by id — a DigitalNZ record id (the \"id\" field from search).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "e.g. \"1234567\"."
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "DigitalNZ API key (optional)."
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  }
+]
